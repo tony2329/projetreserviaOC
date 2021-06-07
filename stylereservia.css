@@ -1,8 +1,63 @@
+/* police ajouté au site */
 @font-face {
   font-family: "raleway";
   src: url(raleway/Raleway-Regular.ttf);
 }
+/* police de la page */
+#bloc_page {
+  font-family: "raleway";
+  margin: 0;
+}
 
-.titreh2 {
-  color: brown;
+/* liens du site non surligne */
+a {
+  text-decoration: none;
+}
+
+/* menu de navitation haut de page */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 1em;
+}
+/*couleur menu police bleu plus clair */
+.couleur_hb {
+  color: #0065fc;
+  font-weight: bold;
+}
+/* couleur menu police bleu gras foncé */
+.couleur_i {
+  color: #0065fc;
+  font-weight: bold;
+}
+/* couleur menu police noir */
+.couleur_n {
+  color: black;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.menu ul li a {
+  padding: 15px;
+  margin: 0 15px;
+}
+
+.menu ul li a:hover {
+  color: #0065fc;
+}
+
+/* titre h1 de la page */
+.titreh1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+}
+/* titre 2 du header */
+.presentation {
+  font-size: 0.7rem;
 }

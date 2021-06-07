@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--chemin des regles css-->
+    <link rel="stylesheet" href="stylereservia.css" />
     <script
       src="https://kit.fontawesome.com/a45e315257.js"
       crossorigin="anonymous"
@@ -18,25 +20,28 @@
     <div id="bloc_page">
       <!--en tête de la page web-->
       <header>
-        <img
-          src="images/logo/Reservia@3x.png"
-          alt="logo du site"
-          srcset="Reservia.svg"
-        />
+        <!--liens de navigation principaux-->
+        <nav class="menu">
+          <div class="logo">
+            <img
+              src="images/logo/Reservia@3x.png"
+              alt="logo du site"
+              srcset="Reservia.svg"
+            />
+          </div>
+          <ul>
+            <li><a class="couleur_hb" href="#Hebergements">Hébergements</a></li>
+            <li><a class="couleur_n" href="#Activites">Activités</a></li>
+            <li><a class="couleur_i" href="#">S'inscrire</a></li>
+          </ul>
+        </nav>
         <!--le titre h1 de la page-->
         <h1 class="titreh1">
           Trouver votre hébergement pour des vacances de rêve
         </h1>
         <!--le petit texte en dessous du titre-->
         <h2 class="presentation">En plein centre ville ou en pleine nature</h2>
-        <!--liens de navigation principaux-->
-        <nav class="menu">
-          <ul>
-            <li><a href="#Hebergements">Hébergements</a></li>
-            <li><a href="#Activites">Activités</a></li>
-            <li><a href="#">S'inscrire</a></li>
-          </ul>
-        </nav>
+
         <!--barre de recherche-->
         <form action="traitement.php" method="post">
           <div id="recherche">
