@@ -34,7 +34,7 @@
           <ul>
             <li><a class="couleur_hb" href="#Hebergements">Hébergements</a></li>
             <li><a class="couleur_act" href="#Activites">Activités</a></li>
-            <li><a class="couleur_ins" href="#">S'inscrire</a></li>
+            <li><a class="couleur_ins"href="#">S'inscrire</a></li>
           </ul>
         </nav>
         <!--le titre h1 de la page-->
@@ -47,16 +47,20 @@
         <!--barre de recherche-->
         <form action="traitement.php" method="post">
           <div id="recherche">
-            <label for="destination"
-              ><i class="fas fa-map-marker-alt"></i
-            ></label>
-            <input
-              type="search"
-              name="destination"
-              id="destination"
-              placeholder="marseille,France"
-            />
-            <button class="bouton">Rechercher</button>
+            <div class="logo_destination">
+              <label for="destination"
+                ><i class="fas fa-map-marker-alt"></i
+              ></label>
+            </div>
+            <div>
+              <input
+                type="search"
+                name="destination"
+                id="destination"
+                value="marseille,France"
+              />
+            </div>
+            <div class="bouton"><button class="bou">Rechercher</button></div>
           </div>
         </form>
         <!--barre de filtre-->

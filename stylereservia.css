@@ -61,15 +61,46 @@ a {
   font-size: 1.3em;
   font-weight: bold;
   color: black;
+  margin: 20px;
 }
 /* titre 2 du header */
 .presentation {
   font-size: 0.8em;
-}
-#recherche {
-  background-color: #0065fc;
+  margin: 20px;
 }
 
+/* barre de recherche header */
+#recherche {
+  display: flex;
+  justify-content: left;
+  margin: 20px;
+}
+/* le logo de map */
+.logo_destination {
+  border-radius: 10px 0 0 10px;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  width: 27px;
+}
+/* la barre de recherche client */
+#destination {
+  padding: 13px;
+  border: 0.5px solid #f2f2f2;
+  color: black;
+  font-weight: bold;
+}
+/* partie extérieur du bouton de recherche */
 .bouton {
+  border-radius: 0 10px 10px 0;
+  padding: 10px;
+  background-color: #0065fc;
+}
+/* le bouton cliquable de recherche (partie intérieur) */
+.bou {
   color: white;
+  background-color: #0065fc;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
 }
