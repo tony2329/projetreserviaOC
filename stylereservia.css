@@ -69,7 +69,7 @@ a {
   margin: 20px;
 }
 
-/* barre de recherche header */
+/* BARRE DE RECHERCHE HEADER */
 #recherche {
   display: flex;
   justify-content: left;
@@ -103,4 +103,17 @@ a {
   border: none;
   font-weight: bold;
   cursor: pointer;
+}
+
+/* FILTRES */
+.filtre {
+  display: flex;
+  justify-content: space-between;
+  color: #0065fc;
+}
+
+.filtre ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
 }
