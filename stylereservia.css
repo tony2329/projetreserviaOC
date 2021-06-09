@@ -7,57 +7,113 @@
 #bloc_page {
   font-family: "raleway";
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* liens du site non surligne */
+/* ligne en dessous du lien enlevé */
 a {
   text-decoration: none;
 }
-
-/* menu de navitation haut de page */
+/* mise en place du menu en haut a droite */
 .menu {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 12px;
   font-size: 1em;
 }
-/*couleur menu police bleu plus clair */
+/* couleur bleu class hébergement */
 .couleur_hb {
   color: #0065fc;
-  font-weight: bold;
 }
-/* couleur menu police bleu gras foncé */
-.couleur_i {
-  color: #0065fc;
-  font-weight: bold;
-}
-/* couleur menu police noir */
-.couleur_n {
+
+/* couleur noir class activité */
+.couleur_act {
   color: black;
 }
 
+/* couleur bleu en gras class s'inscrire */
+.couleur_ins {
+  color: #0065fc;
+  font-weight: bolder;
+}
+/* alignement des liens et puces enlevé */
 .menu ul {
   display: flex;
   align-items: center;
   list-style-type: none;
 }
 
+/* padding marge intérieur margin marge extérieur */
 .menu ul li a {
-  padding: 15px;
-  margin: 0 15px;
+  padding: 33px;
+  margin: 0 3px;
 }
 
+/* clique sur les liens survoles */
 .menu ul li a:hover {
   color: #0065fc;
+  border-top: 3px #0065fc solid;
 }
 
 /* titre h1 de la page */
 .titreh1 {
-  font-size: 1.2rem;
+  font-size: 1.3em;
   font-weight: bold;
   color: black;
+  margin: 20px;
 }
 /* titre 2 du header */
 .presentation {
-  font-size: 0.7rem;
+  font-size: 0.8em;
+  margin: 20px;
+}
+
+/* BARRE DE RECHERCHE HEADER */
+#recherche {
+  display: flex;
+  justify-content: left;
+  margin: 20px;
+}
+/* le logo de map */
+.logo_destination {
+  border-radius: 10px 0 0 10px;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  width: 27px;
+}
+/* la barre de recherche client */
+#destination {
+  padding: 13px;
+  border: 0.5px solid #f2f2f2;
+  color: black;
+  font-weight: bold;
+}
+/* partie extérieur du bouton de recherche */
+.bouton {
+  border-radius: 0 10px 10px 0;
+  padding: 10px;
+  background-color: #0065fc;
+}
+/* le bouton cliquable de recherche (partie intérieur) */
+.bou {
+  color: white;
+  background-color: #0065fc;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* FILTRES */
+.filtre {
+  display: flex;
+  justify-content: space-between;
+  color: #0065fc;
+}
+
+.filtre ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
 }
