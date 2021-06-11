@@ -20,75 +20,78 @@
     <div id="bloc_page">
       <!--en tête de la page web-->
       <header>
-        <!--liens de navigation principaux-->
-        <nav class="menu">
-          <div class="logo">
-            <a href="#">
-              <img
-                src="images/logo/Reservia@3x.png"
-                alt="logo du site"
-                srcset="Reservia.svg"
-              />
-            </a>
-          </div>
-          <ul>
-            <li><a class="couleur_hb" href="#Hebergements">Hébergements</a></li>
-            <li><a class="couleur_act" href="#Activites">Activités</a></li>
-            <li><a class="couleur_ins" href="#">S'inscrire</a></li>
-          </ul>
-        </nav>
+          <!--liens de navigation principaux-->
+          <nav id="menu">
+            <div id="logo">
+              <a href="#">
+                <img
+                  src="images/logo/Reservia@3x.png"
+                  alt="logo du site"
+                  srcset="Reservia.svg"
+                />
+              </a>
+            </div>
+            <ul>
+              <li>
+                <a id="couleur_hb" href="#Hebergements">Hébergements</a>
+              </li>
+              <li><a id="couleur_act" href="#Activites">Activités</a></li>
+              <li><a id="couleur_ins" href="#">S'inscrire</a></li>
+            </ul>
+          </nav>
         <!--le titre h1 de la page-->
-        <h1 class="titreh1">
+        <h1 id="titreh1">
           Trouver votre hébergement pour des vacances de rêve
         </h1>
         <!--le petit texte en dessous du titre-->
-        <h2 class="presentation">En plein centre ville ou en pleine nature</h2>
-
-        <!--barre de recherche-->
-        <form action="traitement.php" method="post">
-          <div id="recherche">
-            <div class="logo_destination">
-              <label for="destination"
-                ><i class="fas fa-map-marker-alt"></i
-              ></label>
+        <h2 id="presentation">En plein centre ville ou en pleine nature</h2>
+          <form>
+            <!--barre de recherche-->
+            <div id="recherche">
+              <div id="logodestination">
+                <label for="destination"
+                  ><i class="fas fa-map-marker-alt"></i
+                ></label>
+              </div>
+              <div>
+                <input
+                  type="search"
+                  name="destination"
+                  id="destination"
+                  value="Marseille,France"
+                />
+              </div>
+              <div id="bouton"><button class="bou">Rechercher</button></div>
             </div>
-            <div>
-              <input
-                type="search"
-                name="destination"
-                id="destination"
-                value="marseille,France"
-              />
+          </form>
+          <!--barre de filtre-->
+          <div class="filtre marge_filtre">
+            <!--titre filtreh2-->
+            <h2 class="filtreh2">Filtres</h2>
+            <!-- tous les logos du filtre-->
+            <div class="filtre_texte texte_centre">
+              <i class="fas fa-money-bill-wave logo_icon"></i>
+              <div class="couleur_texte texte_centre">Économiques</div>
             </div>
-            <div class="bouton"><button class="bou">Rechercher</button></div>
+            <div class="filtre_texte texte_centre">
+              <i class="fas fa-child logo_icon"></i>
+              <div class="couleur_texte texte_centre">Familiales</div>
+            </div>
+            <div class="filtre_texte texte_centre">
+              <i class="fas fa-heart logo_icon"></i>
+              <div class="couleur_texte texte_centre">Romantique</div>
+            </div>
+            <div class="filtre_texte texte_centre">
+              <i class="fas fa-dog logo_icon"></i>
+              <div class="couleur_texte texte_centre">Animaux autorisés</div>
+            </div>
           </div>
-        </form>
-        <!--barre de filtre-->
-        <nav class="filtre">
-          <!--liste dans le désordre-->
-          <ul>
-            <li>filtre</li>
-            <li>
-              <!--tout les logo du filtre filtre-->
-              <i class="fas fa-money-bill-wave"></i
-              ><a href="#Economique">Économique</a>
-            </li>
-            <li>
-              <i class="fas fa-child"></i> <a href="#Familial">Familial</a>
-            </li>
-            <li>
-              <i class="fas fa-heart"></i><a href="#Romantique">Romantique</a>
-            </li>
-            <li>
-              <i class="fas fa-dog"></i
-              ><a href="#Animaux-autorises">Animaux autorisés</a>
-            </li>
-          </ul>
-        </nav>
-        <!--info logo et texte-->
-        <i class="fas fa-info"
-          >plus de 500 logements sont disponibles dans cette ville</i
-        >
+          <!--info logo et texte-->
+          <i class="fas fa-info"></i>
+          <h2 class="titreinfo">
+            Plus de 500 logements sont disponibles dans cette ville
+          </h2>
+        
       </header>
 
       <!--premier bloc hébergements-->
@@ -325,4 +328,3 @@
     </div>
   </body>
 </html>
-
