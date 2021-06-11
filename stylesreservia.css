@@ -3,83 +3,93 @@
   font-family: "raleway";
   src: url(raleway/Raleway-Regular.ttf);
 }
+@font-face {
+  font-family: "ralewaybold";
+  src: url(raleway/Raleway-Bold.ttf);
+}
 /* police de la page */
 #bloc_page {
   font-family: "raleway";
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 /* ligne en dessous du lien enlevé */
 a {
   text-decoration: none;
 }
+
+/* MENU */
+
 /* mise en place du menu en haut a droite */
-.menu {
+#menu {
   display: flex;
   justify-content: space-between;
   padding: 12px;
   font-size: 1em;
 }
 /* couleur bleu class hébergement */
-.couleur_hb {
-  color: #0065fc;
+#couleur_hb {
+  color: black;
 }
 
 /* couleur noir class activité */
-.couleur_act {
+#couleur_act {
   color: black;
 }
 
 /* couleur bleu en gras class s'inscrire */
-.couleur_ins {
+#couleur_ins {
   color: #0065fc;
-  font-weight: bolder;
+  font-family: "ralewaybold";
+  font-weight: bold;
 }
 /* alignement des liens et puces enlevé */
-.menu ul {
+#menu ul {
   display: flex;
   align-items: center;
   list-style-type: none;
 }
 
 /* padding marge intérieur margin marge extérieur */
-.menu ul li a {
+#menu ul li a {
   padding: 33px;
-  margin: 0 3px;
+  margin: 0 35px;
 }
 
 /* clique sur les liens survoles */
-.menu ul li a:hover {
+#menu ul li a:hover {
   color: #0065fc;
   border-top: 3px #0065fc solid;
 }
 
+/* TITRE */
+
 /* titre h1 de la page */
-.titreh1 {
+#titreh1 {
+  font-family: "ralewaybold";
   font-size: 1.3em;
   font-weight: bold;
   color: black;
   margin: 20px;
 }
 /* titre 2 du header */
-.presentation {
-  font-size: 0.8em;
+#presentation {
+  font-size: 1em;
   margin: 20px;
 }
 
-/* BARRE DE RECHERCHE HEADER */
+/* BARRE DE RECHERCHE */
+
+/* la barre de recherche */
 #recherche {
   display: flex;
   justify-content: left;
   margin: 20px;
 }
 /* le logo de map */
-.logo_destination {
+#logodestination {
   border-radius: 10px 0 0 10px;
-  background-color: #f2f2f2;
   text-align: center;
+  background-color: #f2f2f2;
   padding: 10px;
   width: 27px;
 }
@@ -91,7 +101,7 @@ a {
   font-weight: bold;
 }
 /* partie extérieur du bouton de recherche */
-.bouton {
+#bouton {
   border-radius: 0 10px 10px 0;
   padding: 10px;
   background-color: #0065fc;
@@ -106,14 +116,62 @@ a {
 }
 
 /* FILTRES */
-.filtre {
+
+.texte_centre {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+/* placement de la barre de filtre a gauche */
+
+.marge_filtre {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.filtre {
+  display: flex;
+  align-items: center;
+}
+
+.filtreh2 {
+  margin-right: 20px;
+  font-family: "ralewaybold";
+  font-size: 1em;
+  margin: 20px;
+}
+
+.filtre_texte {
+  border: 2px solid #f2f2f2;
+  height: 50px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.filtre_texte:hover > .couleur_texte {
   color: #0065fc;
 }
 
-.filtre ul {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
+.filtre_texte:hover > .logo_icon {
+  color: white;
+  background-color: #0065fc;
+}
+
+.couleur_texte {
+  height: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 0 25px 25px 0;
+}
+
+.logo_icon {
+  margin-left: -2px;
+  border-radius: 25px;
+  width: 52px;
+  height: 36px;
+  color: #0065fc;
+  background-color: #deebff;
+  text-align: center;
+  padding-top: 17px;
 }
